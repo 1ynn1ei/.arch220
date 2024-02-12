@@ -101,6 +101,7 @@ static const Key keys[] = {
   { 0,                     XF86XK_AudioMute, spawn,          {.v = mutevol } },
   { 0,               XF86XK_MonBrightnessUp, spawn,          {.v = lightup } },
   { 0,             XF86XK_MonBrightnessDown, spawn,          {.v = lightdown } },
+  /**/
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
