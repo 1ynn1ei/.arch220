@@ -69,6 +69,8 @@ static const char *mutevol[] = { "/usr/bin/amixer", "set", "Master", "toggle", N
 static const char *lightup[] = {"/usr/bin/xbacklight", "-inc", "10", NULL };
 static const char *lightdown[] = {"/usr/bin/xbacklight", "-dec", "10", NULL };
 
+static const char *screenshot[] = {"/usr/bin/shotgun", NULL };
+
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
@@ -101,6 +103,7 @@ static const Key keys[] = {
   { 0,                     XF86XK_AudioMute, spawn,          {.v = mutevol } },
   { 0,               XF86XK_MonBrightnessUp, spawn,          {.v = lightup } },
   { 0,             XF86XK_MonBrightnessDown, spawn,          {.v = lightdown } },
+  { 0,             XK_Print                , spawn,          {.v = screenshot } },
   /**/
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
